@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bgBanner from '../../assets/images/banner.png'
+import bgBanner from '../../assets/images/banner2.jpg'
 import heroImage from '../../assets/images/zebra.jpeg'
 
 const Banner = () => {
@@ -11,7 +11,7 @@ const Banner = () => {
                 <div className='lg:mr-28'>
                     <h1 className="lg:text-6xl lg:w-full w-80 lg:mt-0 mt-3 text-3xl font-bold text-white">Crafting Tanzania tours
                         <br /> for a lifetime of memories</h1>
-                    <p className='my-5 text-lg font-semibold text-white'>Our 35 years of experience will help you plan the right parks, accommodations, and activities.</p>
+                    <p className='my-5 text-lg font-semibold text-gray-600'>Our 35 years of experience will help you plan the right parks, accommodations, and activities.</p>
                     <Link to="/blogs" className="lg:ml-1 relative inline-block px-4 py-2 font-medium group">
                         <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-primary group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                         <span className="absolute inset-0 w-full h-full bg-primary border-2 border-primary group-hover:bg-primary"></span>
