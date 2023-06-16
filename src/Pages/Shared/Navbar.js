@@ -32,21 +32,21 @@ export default function Example() {
                                 >
                                     About
                                 </Link>
-                                <Link to='/contact'
+                                <Link to='/booking'
 
                                     className="inline-flex items-center  px-1 pt-1 text-sm font-medium text-gray-900 uppercase"
                                 >
-                                    Contact
+                                    Booking
                                 </Link>
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                                <button
+                                <Link to='/contact'
                                     type="button"
                                     className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase"
                                 >
                                     GET in touch
 
-                                </button>
+                                </Link>
 
                                 {/* Profile dropdown */}
 
