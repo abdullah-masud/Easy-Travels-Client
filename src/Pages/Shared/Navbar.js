@@ -16,7 +16,7 @@ export default function Example() {
                         <div className="flex h-16 justify-between ">
                             <div className="flex ">
                                 <div className="flex flex-shrink-0 items-center">
-                                    <Link className='text-lg font-bold text-primary' to='/'>Easy Travel</Link>
+                                    <Link className='text-xl font-bold text-primary' to='/'>Easy Travel</Link>
                                 </div>
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:space-x-8 ">
