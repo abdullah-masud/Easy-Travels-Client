@@ -1,6 +1,6 @@
 import React from 'react';
 import expert from '../../assets/images/expert.jpg'
-import { Link } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
 
 const BookingSection = () => {
     return (
@@ -10,13 +10,16 @@ const BookingSection = () => {
                 <div className='lg:mr-28'>
                     <h1 className="lg:text-3xl lg:w-full w-80 lg:mt-0 mt-3 text-xl font-bold text-black">PLAN WITH OUR EXPERTS TODAY</h1>
                     <p className='my-5 text-sm font-semibold text-gray-600'>Our Local Experts have helped thousands of travellers to Plan, Save and Succeed! Reach out to them now</p>
-                    <Link to='/booking'
+                    <LinkScroll to='contact'
                         type="button"
-                        className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase"
+                        className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase cursor-pointer"
+                        smooth={true}
+                        duration={500}
+                        offset={0}
                     >
                         GET STARTED
 
-                    </Link>
+                    </LinkScroll>
                 </div>
             </div>
         </div >

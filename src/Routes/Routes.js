@@ -3,7 +3,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 // import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
-import Booking from "../Pages/Booking/Booking";
+// import Booking from "../Pages/Booking/Booking";
 import TanzaniaSafaris from "../Pages/Home/SafariDestinations/TanzaniaSafaris";
 import KenyaSafaris from "../Pages/Home/SafariDestinations/KenyaSafaris";
 import SouthAfricaSafaris from "../Pages/Home/SafariDestinations/SouthAfricaSafaris";
@@ -22,10 +22,10 @@ const router = createBrowserRouter([
                 path: "/about",
                 element: <About />,
             },
-            {
-                path: "/booking",
-                element: <Booking />,
-            },
+            // {
+            //     path: "/booking",
+            //     element: <Booking />,
+            // },
             {
                 path: "/tanzania-safaris",
                 element: <TanzaniaSafaris />,

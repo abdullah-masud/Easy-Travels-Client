@@ -32,12 +32,20 @@ export default function Example() {
                                 >
                                     About
                                 </Link>
-                                <Link to='/booking'
+                                <LinkScroll to='destinations'
+                                    className="inline-flex items-center   px-1 pt-1 text-sm font-medium text-gray-900 uppercase cursor-pointer"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={0}
+                                >
+                                    Destinations
+                                </LinkScroll>
+                                {/* <Link to='/booking'
 
                                     className="inline-flex items-center  px-1 pt-1 text-sm font-medium text-gray-900 uppercase"
                                 >
                                     Booking
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:items-center cursor-pointer">
                                 <LinkScroll to='contact'
