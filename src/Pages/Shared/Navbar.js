@@ -1,11 +1,12 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+import { Link as LinkScroll } from 'react-scroll';
+
+// function classNames(...classes) {
+//     return classes.filter(Boolean).join(' ')
+// }
 
 export default function Example() {
     return (
@@ -39,14 +40,16 @@ export default function Example() {
                                     Booking
                                 </Link>
                             </div>
-                            <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                                <Link to='/contact'
+                            <div className="hidden sm:ml-6 sm:flex sm:items-center cursor-pointer">
+                                <LinkScroll to='contact'
                                     type="button"
-                                    className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase"
+                                    className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase transition-all duration-300"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-70}
                                 >
                                     GET in touch
-
-                                </Link>
+                                </LinkScroll>
 
                                 {/* Profile dropdown */}
 

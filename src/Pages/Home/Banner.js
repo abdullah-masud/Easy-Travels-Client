@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import bgBanner from '../../assets/images/banner2.jpg'
-import heroImage from '../../assets/images/zebra.jpeg'
-
 const Banner = () => {
     return (
         <div className="hero" style={{ backgroundImage: `url(${bgBanner})` }}>

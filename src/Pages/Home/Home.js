@@ -3,6 +3,7 @@ import Banner from './Banner'
 import Options from './Options';
 import BookingSection from './BookingSection';
 import Destinations from './SafariDestinations/Destinations/Destinations';
+import Contact from './Contact';
 const Home = () => {
     return (
         <div>
@@ -10,6 +11,7 @@ const Home = () => {
             <Options />
             <BookingSection />
             <Destinations />
+            <Contact />
         </div>
     );
 };
