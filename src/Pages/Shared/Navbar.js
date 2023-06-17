@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
-
 import { Link as LinkScroll } from 'react-scroll';
 
 // function classNames(...classes) {
@@ -43,7 +42,7 @@ export default function Example() {
                             <div className="hidden sm:ml-6 sm:flex sm:items-center cursor-pointer">
                                 <LinkScroll to='contact'
                                     type="button"
-                                    className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase transition-all duration-300"
+                                    className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase "
                                     smooth={true}
                                     duration={500}
                                     offset={-70}
