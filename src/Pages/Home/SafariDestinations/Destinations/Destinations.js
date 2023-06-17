@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import destinationStyle from './Destinations.module.css'
 import lion from '../../../../assets/images/lion.jpg'
 import leopard from '../../../../assets/images/leopard.jpg'
 import cheetah from '../../../../assets/images/cheetah.jpg'
 import elephant from '../../../../assets/images/elephant.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+
 
 const Destinations = () => {
+    const location = useLocation();
+    useEffect(() => {
+        const shouldScrollToDestination = new URLSearchParams(location.search).get('scrollToDestination');
+        if (shouldScrollToDestination) {
+            // Scroll to the destination section
+            scroller.scrollTo('destinations', {
+                duration: 800,
+                delay: 0,
+                smooth: 'easeInOutQuart',
+            });
+        }
+    }, [location]);
+
     return (
         <div className=''>
             <div id='destinations' className='max-w-7xl mx-auto  min-h-screen pt-12 flex items-center flex-col lg:px-0 px-4 '>

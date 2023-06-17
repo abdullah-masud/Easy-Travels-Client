@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { Link as LinkScroll } from 'react-scroll';
 const Footer = () => {
     return (
         <div className='max-w-7xl mx-auto py-10'>
@@ -17,7 +17,11 @@ const Footer = () => {
                     <span className="footer-title">Navigate</span>
                     <Link to='/' className="link link-hover">Home</Link>
                     <Link to='/about' className="link link-hover">About</Link>
-                    <Link to='/booking' className="link link-hover">Booking</Link>
+                    <LinkScroll to='destinations' className="link link-hover"
+                        smooth={true}
+                        duration={500}
+                        offset={0}>Destinations
+                    </LinkScroll>
                 </div>
                 <div>
                     <span className="footer-title">Social</span>

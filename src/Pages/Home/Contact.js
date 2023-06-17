@@ -1,6 +1,19 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 const Contact = () => {
+    const location = useLocation();
+    useEffect(() => {
+        const shouldscrollToContact = new URLSearchParams(location.search).get('scrollToContact');
+        if (shouldscrollToContact) {
+            // Scroll to the destination section
+            scroller.scrollTo('contact', {
+                duration: 800,
+                delay: 0,
+                smooth: 'easeInOutQuart',
+            });
+        }
+    }, [location]);
 
     return (
         <div id='contact' className='bg-[#d0bfaa42]'>
