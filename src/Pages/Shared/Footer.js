@@ -2,26 +2,46 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 const Footer = () => {
+
+    const handleDestinationScroll = (e) => {
+        const isHomePage = window.location.pathname === '/' || window.location.pathname === '/home';
+        if (isHomePage) {
+            // Scroll to the destination section on the home page
+            e.preventDefault(); // Prevent the link from navigating to the destination
+            const destinations = document.getElementById('destinations');
+            if (destinations) {
+                window.scrollTo({
+                    top: destinations.offsetTop,
+                    behavior: 'smooth',
+                });
+            }
+        }
+    };
+
     return (
         <div className='max-w-7xl mx-auto py-10'>
             <footer className="footer p-10  ">
                 <div>
                     <span className="footer-title">Safaris</span>
-                    <Link to='/' className="link link-hover">Tanzania Safaris</Link>
-                    <Link to='/' className="link link-hover">Kenya Safaris</Link>
-                    <Link to='/' className="link link-hover">South Africa Safaris</Link>
-                    <Link to='/' className="link link-hover">Botswana Safaris</Link>
+                    <Link to='/tanzania-safaris' className="link link-hover">Tanzania Safaris</Link>
+                    <Link to='/kenya-safaris' className="link link-hover">Kenya Safaris</Link>
+                    <Link to='/south-africa-safaris' className="link link-hover">South Africa Safaris</Link>
+                    <Link to='/botswana-safaris' className="link link-hover">Botswana Safaris</Link>
 
                 </div>
                 <div>
                     <span className="footer-title">Navigate</span>
                     <Link to='/' className="link link-hover">Home</Link>
                     <Link to='/about' className="link link-hover">About</Link>
-                    <LinkScroll to='destinations' className="link link-hover"
+                    <Link to="/?scrollToDestination=true"
+                        className="link link-hover"
                         smooth="true"
                         duration={500}
-                        offset={0}>Destinations
-                    </LinkScroll>
+                        offset={0}
+                        onClick={handleDestinationScroll}
+                    >
+                        Destinations
+                    </Link>
                 </div>
                 <div>
                     <span className="footer-title">Social</span>
