@@ -18,7 +18,7 @@ const Footer = () => {
                     <Link to='/' className="link link-hover">Home</Link>
                     <Link to='/about' className="link link-hover">About</Link>
                     <LinkScroll to='destinations' className="link link-hover"
-                        smooth={true}
+                        smooth="true"
                         duration={500}
                         offset={0}>Destinations
                     </LinkScroll>

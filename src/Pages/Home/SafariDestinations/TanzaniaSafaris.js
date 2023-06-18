@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import lion from '../../../assets/images/lion.jpg'
+
 const TanzaniaSafaris = () => {
 
     useEffect(() => {

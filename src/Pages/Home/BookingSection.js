@@ -13,7 +13,7 @@ const BookingSection = () => {
                     <LinkScroll to='contact'
                         type="button"
                         className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase cursor-pointer"
-                        smooth={true}
+                        smooth="true"
                         duration={500}
                         offset={0}
                     >
