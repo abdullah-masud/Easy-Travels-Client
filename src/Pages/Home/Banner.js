@@ -12,7 +12,7 @@ const Banner = () => {
                     <p className='my-5 text-lg font-semibold text-gray-600'>Our 35 years of experience will help you plan the right parks, accommodations, and activities.</p>
                     <LinkScroll to='destinations'
                         className="lg:ml-1 relative inline-block px-4 py-2 font-medium group cursor-pointer"
-                        smooth={true}
+                        smooth="true"
                         duration={500}
                         offset={0}
                     >

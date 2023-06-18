@@ -63,7 +63,7 @@ export default function Example() {
                                 </Link>
                                 <Link to="/?scrollToDestination=true"
                                     className="inline-flex items-center   px-1 pt-1 text-sm font-medium text-gray-900 uppercase cursor-pointer"
-                                    smooth={true}
+                                    smooth="true"
                                     duration={500}
                                     offset={0}
                                     onClick={handleDestinationScroll}
@@ -76,7 +76,7 @@ export default function Example() {
                                 <Link to="/?scrollToContact=true"
                                     type="button"
                                     className="font-semibold rounded-md bg-primary px-3 py-2 text-white  uppercase "
-                                    smooth={true}
+                                    smooth="true"
                                     duration={500}
                                     offset={-70}
                                     onClick={handleContactScroll}
